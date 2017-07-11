@@ -16,10 +16,10 @@ while True:
     from datetime import datetime
     datahora = datetime.now()
     reg = "Cliente:"+str(cliente)+" Data/Hora:"+str(datahora)+" Ip:"+str(addr[0]+ "   \n" )
-    arq = open('/tmp/lista.txt', 'w' )
+    arq = open('/tmp/log.txt', 'w' )
     registro.append(reg)
     arq.writelines(registro ) 
-    arq = open('/tmp/lista.txt', 'r')
+    arq = open('/tmp/log.txt', 'r')
     registro = arq.readlines()
     for linha in registro:
        print (linha )
