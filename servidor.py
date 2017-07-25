@@ -22,7 +22,7 @@ while True:
     arq = open('/tmp/log.txt', 'r')
     registro = arq.readlines()
     for linha in registro:
-       print (linha )
+       print (linha)
     arq.close() 
 client.close()
 tcp_server_socket.close()
